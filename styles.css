@@ -1,0 +1,125 @@
+
+body{
+  margin: 0px;
+}
+
+
+/* grid for layout */
+.container {
+  display : grid;
+  grid-template-columns: 1fr
+}
+
+/* flex for alignment small elements eg navbars */
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+}
+
+.left-side{
+  display: flex;
+}
+
+.nav-wrapper > .left-side > div{
+  margin:20px;
+  font-size: 0.9em;
+
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+
+}
+
+.nav-link-wrapper a {
+  color:blue;
+  text-decoration: none;
+
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper:hover a:hover {
+  color: black;
+}
+
+.active-nav-link{
+  border-bottom: 1px solid black;
+}
+
+
+.active-nav-link a{
+  color: black !important;
+}
+
+
+/*portfolio item style*/
+.portfolio-items-wrapper{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+
+}
+
+.portlofio-img-background{
+  height:300px;
+  width: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+  
+  align-items: center;
+  text-align: center;
+ 
+} 
+ 
+.logo-wrapper img{
+
+  margin-bottom:0;
+} 
+ 
+.img-text-wrapper .subtitle{
+  font-weight: 600;
+  transition: 1s;
+  color: transparent;
+} 
+ 
+
+.img-text-wrapper:hover .subtitle {
+  font-weight: 600;
+  color: lightseagreen;
+} 
+
+.img-darken {
+  transition: 1s;
+  filter:brightness(10%);
+
+} 
+
+.two-column-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img{
+  width: 85%;
+}
+
+.profile-content-wrapper {
+  padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+  color: lightseagreen;
+}
